@@ -34,13 +34,13 @@ resource "aws_elb" "elb" {
     interval            = 30
   }
 
-  instances                   = ["${aws_instance.foo.id}"]
+  instances                   = ["${aws_instance.foo.id}"] # Link to EC2 instances
   cross_zone_load_balancing   = true
   idle_timeout                = 400
   connection_draining         = true
   connection_draining_timeout = 400
 
   tags = {
-    Name = "foobar-terraform-elb"
+    Name = "parking-elb"
   }
 }
