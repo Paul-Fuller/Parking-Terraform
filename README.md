@@ -70,5 +70,6 @@ A resource block declares a resource of a given type ("aws_vpc") with a given lo
 The resource type and name together serve as an identifier for a given resource and so must be unique within a module
 
 Example:
+```
 resource "aws_vpc" "vpc"
-
+```
