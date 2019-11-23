@@ -1,5 +1,36 @@
 # Readme file for project
 
+## Usage
+
+`terraform.tfvars` holds variables which should be overriden with valid ones.
+
+```bash
+|__Parking
+    |__ Terraform
+        |__ .gitignore
+        |__ Provider.tf
+        |__ vpc.tf
+        |__ subnet.tf
+        |__ Main.tf
+        |__ Network.tf
+        |__ WebServer.tf
+        |__ DBServer.tf
+        |__ Output.tf
+        |__ terraform.tfvars
+        |__ PROD.tf
+        |__ UAT.tf
+```
+
+## Desktop setup
+
+* Connect to Desktop
+* Open VSCode
+* Import terraform module
+* Download and install AWSCLI
+    * in cmd do aws configure
+    * provide access key and secret key
+    * region = eu-west-1, language = JSON
+
 ## Git Setup
 
 * Connect to GitHub (www.github.com)
