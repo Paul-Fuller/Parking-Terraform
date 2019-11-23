@@ -1,4 +1,6 @@
-# Readme file for project
+# Parking Project
+
+How I wish the project had been completed
 
 ## Usage
 
@@ -13,12 +15,14 @@
         |__ subnet.tf
         |__ Main.tf
         |__ Network.tf
+        |__ elb.tf
+        |__ s3.tf
         |__ WebServer.tf
         |__ DBServer.tf
         |__ Output.tf
         |__ terraform.tfvars
-        |__ PROD.tf
-        |__ UAT.tf
+        |__ PROD-VAR.tf
+        |__ UAT-VAR.tf
 ```
 
 ## Desktop setup
@@ -57,3 +61,14 @@
 * Git push
 * Version 1.0 ready for deployment
 * Git add (add files to staging area ready to commit)
+
+## Terraform Notes
+
+### Resource
+
+A resource block declares a resource of a given type ("aws_vpc") with a given local name ("vpc").
+The resource type and name together serve as an identifier for a given resource and so must be unique within a module
+
+Example:
+resource "aws_vpc" "vpc"
+
